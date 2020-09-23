@@ -9,6 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, NavbarComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent, NavbarComponent ]
 })
 export class AppModule { }
