@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { DoBootstrap, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -11,4 +11,4 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [ AppComponent, HelloComponent, NavbarComponent ],
   bootstrap:    [ AppComponent, NavbarComponent ]
 })
-export class AppModule { }
+export class AppModule {}
