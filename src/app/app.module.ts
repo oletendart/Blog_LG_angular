@@ -9,10 +9,11 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
 import { DescriptionComponent } from './description/description.component';
 import { CreditsComponent } from './credits/credits.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, CarouselComponent, CardsComponent, DescriptionComponent, CreditsComponent ],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, CarouselComponent, CardsComponent, DescriptionComponent, CreditsComponent, CardComponent ],
   bootstrap:    [ AppComponent, NavbarComponent ]
 })
 export class AppModule {}
