@@ -20,11 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
+            defaultLanguage: 'en'
         })],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, CarouselComponent, CardsComponent, DescriptionComponent, CreditsComponent, CardComponent ],
   bootstrap:    [ AppComponent, NavbarComponent ]
