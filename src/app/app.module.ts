@@ -1,6 +1,7 @@
 import { DoBootstrap, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -12,7 +13,7 @@ import { CreditsComponent } from './credits/credits.component';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, TranslateModule.forRoot()],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, CarouselComponent, CardsComponent, DescriptionComponent, CreditsComponent, CardComponent ],
   bootstrap:    [ AppComponent, NavbarComponent ]
 })
