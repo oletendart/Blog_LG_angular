@@ -14,6 +14,10 @@ import { DescriptionComponent } from './description/description.component';
 import { CreditsComponent } from './credits/credits.component';
 import { CardComponent } from './components/card/card.component';
 
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+}
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, TranslateModule.forRoot()],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, CarouselComponent, CardsComponent, DescriptionComponent, CreditsComponent, CardComponent ],
