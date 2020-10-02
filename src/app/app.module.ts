@@ -7,11 +7,11 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CardsComponent } from './cards/cards.component';
-import { DescriptionComponent } from './description/description.component';
-import { CreditsComponent } from './credits/credits.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { DescriptionComponent } from './components/description/description.component';
+import { CreditsComponent } from './components/credits/credits.component';
 import { CardComponent } from './components/card/card.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -19,7 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, TranslateModule.forRoot({
+  imports: [ BrowserModule, FormsModule, TranslateModule.forRoot({
             defaultLanguage: 'en'
         })
         ],
