@@ -1,6 +1,9 @@
 <app-navbar></app-navbar>
 <app-carousel></app-carousel>
-<div>{{ 'HELLO' | translate: param }}</div>
+<div>{{ 'HELLO' | translate: param }}
+  <button (click)="changeLangage('fr')">FR</button>
+  <button (click)="changeLangage('en')">EN</button>
+</div>
 <app-description></app-description>
 <app-cards></app-cards>
 <app-credits></app-credits>
