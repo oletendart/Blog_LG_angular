@@ -19,7 +19,16 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  imports: [ BrowserModule, FormsModule, TranslateModule.forRoot({
+  imports: [ 
+    BrowserModule, 
+    FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            },
             defaultLanguage: 'en'
         })
         ],
